@@ -1,6 +1,5 @@
-### BE setup
+### Stack
 
-- Connect to database
-- Create MongoDB cluster
-- Set up models
-- Create documents
+- Node.js
+- Express
+- MongoDB
