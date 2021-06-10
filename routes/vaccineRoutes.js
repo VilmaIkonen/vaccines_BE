@@ -1,10 +1,10 @@
 // Only routes here, to keep code clean. Logic in controllers.
 
 import express from 'express'
-import { getX } from '../controllers/vaccineControllers.js'
+import { getAllVaccinations } from '../controllers/vaccinationsController.js'
 
 const router = express.Router()
 
-router.get('/', getX)
+router.get('/', getAllVaccinations)
 
 export default router
