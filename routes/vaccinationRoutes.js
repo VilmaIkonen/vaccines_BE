@@ -3,8 +3,8 @@
 import express from 'express'
 import { getAllVaccinations } from '../controllers/vaccinationController.js'
 
-const router = express.Router()
+const vaccinationRouter = express.Router()
 
-router.get('/', getAllVaccinations)
+vaccinationRouter.get('/', getAllVaccinations)
 
-export default router
+export default vaccinationRouter
