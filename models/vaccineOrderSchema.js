@@ -2,14 +2,14 @@ import mongoose from 'mongoose'
 
 const vaccineOrderSchema = mongoose.Schema({
   id: String,
-  orderNumber: String,
+  orderNumber: Number,
   responsiblePerson: String,
   healthCareDistrict: String,
   vaccine: String,
   injections: Number,
-  aarrived: Date
+  arrived: Date
 })
 
-const VaccineOrderSchema = mongoose.model('VaccineOrderSchema', vaccineOrderSchema)
+const VaccineOrders = mongoose.model('VaccineOrders', vaccineOrderSchema)
 
-export default VaccineOrderSchema
+export default VaccineOrders

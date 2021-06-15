@@ -7,6 +7,6 @@ const vaccinationSchema = mongoose.Schema({
   vaccinationDate: Date
 })
 
-const VaccinationSchema = mongoose.model('VaccinationSchema', vaccinationSchema)
+const Vaccinations = mongoose.model('Vaccinations', vaccinationSchema)
 
-export default VaccinationSchema
+export default Vaccinations
