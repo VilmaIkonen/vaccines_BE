@@ -14,10 +14,10 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cors())
 
 app.use('/api/vaccinations', vaccinationRouter)
-app.use('/api/vaccinesorders', vaccineOrderRouter)
+app.use('/api/vaccineorders', vaccineOrderRouter)
 
 
-// This should be seen when go to actual deployed version:
+// This should be seen when go to localhost:5000/actual deployed version:
 app.get('/', (req, res) => {
   res.send('Greetings from Vaccinations and VaccineOrders API!')
 })
@@ -38,3 +38,5 @@ mongoose.connect(CONNECTION_URL, {
   .catch((error) => console.log(error.message))
 
 mongoose.set('useFindAndModify', false)
+
+mongoose.set('debug', true)
